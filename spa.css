@@ -1,0 +1,204 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #C7F2A4;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navbar {
+    position: absolute;
+    background-color: #4E944F;
+    width: 100%;
+    height: 10%;
+  }
+  
+  .nav1 {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+
+  }
+  
+  .nav2 {
+    font-family: "Poppins-Medium";
+    font-size: 100%;
+    margin: 1.8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 25%;
+    list-style: none;
+    padding-left: 60%;
+  }
+  
+  .logo {
+    font-family: sans-serif;
+    position: absolute;
+    font-size: 300%;
+    margin: 0.5%;
+    padding-left: 5%;
+    color: #E9EFC0;
+    list-style-type: none;
+    
+  }
+  
+  .nothing li a{
+    color: black;
+    font-size: large;
+  }
+
+  .nothing li {
+    list-style-type: none;
+  }
+  .nothing ul{
+    text-align: center;
+  }
+  
+  #konten{
+    background-color: white;
+    border: solid 1px white;
+    padding-top: 10%;
+    display: none;
+    color: black;
+    font-family: calibri;
+    border-radius: 6px;
+    box-shadow: 1px 1px 6px gray;
+    text-align: center;
+  }
+
+
+  .foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    overflow: auto;
+    margin: 90%;
+    margin-left: 5%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: -5px 5px #FCFFB2;
+    transition: 0.5s;
+  }
+
+  img:hover {
+    transform: scale(1.04);
+  }
+  
+  .gambar{
+    width: 15%;
+  }
+
+  .identitas {
+    cursor: default;
+    padding: 5%;
+    color: #665A48;
+  }
+  
+
+  
+  .identitas h4:hover {
+    transform: scale(1.03);
+  }
+  
+  .h4_kampus {
+    font-weight: 300;
+    transition: 0.5s;
+  }
+
+.icon {
+  position: relative;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  
+}  
+
+.tombol {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: white;
+  margin: 10px;
+  border-radius: 30%;
+  overflow: hidden;
+  position: relative;
+  color: #2980b9;
+}
+
+.h1{
+	animation: typewriter 3s steps(33) 0.5s 1 normal both,
+				  blinkTextCursor 1000ms steps(33) infinite normal;
+}
+.nama{
+	
+    	position: relative;
+    	top: 50%;  
+    	width: 14em;
+    	margin: 0 auto;
+		border-right: 1px solid rgba(255,255,255,.75);
+    	text-align: center;
+    	white-space: nowrap;
+    	overflow: hidden;
+    	transform: translateY(-50%);    
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 14em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: black;}
+  to{border-right-color: transparent;}
+}
+
+.tombol i {
+  transition: 0.2s linear;
+  font-size: 26px;
+  line-height: 90px;
+}
+
+.tombol hover:i {
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+.tombol::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: -110%;
+  top: 90%;
+  transform: rotate(45deg);
+  background: #4E944F;
+}
+
+.tombol:hover::before {
+  left: -10%;
+  top: -10%;
+  animation: aaa 0.7s 1; 
+}
+
+@keyframes aaa {
+  0% {
+    left: -110%;
+    top: 90%;
+  }
+
+  50% {
+    left: 10%;
+    top: -30%;
+  }
+
+  100% {
+    left: -10%;
+    top: -10%;
+  }
+}
